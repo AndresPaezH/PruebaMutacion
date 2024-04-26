@@ -1,0 +1,12 @@
+<!--Aqui se llama un metodo de la clase para detear la variable 'habilitar', ademas un if para cambiar el texto-->
+<button type="button" (click)="setHabilitar()" class="btn btn-primary my-3">{{getTextHabilitar()}}</button>
+<div class="card">
+    <div class="card-header">
+        Listado de cursos
+    </div>
+    <!-- este es un ngIf y funciona como un if, dependiendo del valor de la variable habilitar en la clase del componente, lo muestra o no-->
+    <ul class="list-group" *ngIf="habilitar == true">
+        <!--El *ngFor es un for que ayuda a recorrer elementos y asi mostrar la lista del objeto declarado en la clase del componente-->
+        <li class="list-group-item" *ngFor="let curso of listaCurso" id="{{curso}}">{{ curso }}</li>
+    </ul>
+</div>

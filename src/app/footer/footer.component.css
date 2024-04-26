@@ -1,0 +1,8 @@
+/* esto es para mandar el footer bien abajo de la pagina*/
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+}

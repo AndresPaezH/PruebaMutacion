@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'estudio-app';
+
+  curso: string = 'Sprint y Angular';
+  estudiante: string = 'Edwin Paez';
 }
